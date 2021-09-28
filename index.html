@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main">
+            <h1 id="title">Me Myself & I</h1>
+            <p id="description">Take this survey to redeem a free personality test</p>
+            <form id="survey-form" action="#">
+                <label id="name-label"> Name *
+                    <input id="name" required type="text" placeholder="Enter your name">
+                </label>
+                <label id="email-label">Email *
+                    <input id="email" required type="email" placeholder="Enter your email">
+                </label>
+                <label id="number-label">Age (minimum age required 18!)
+                    <input id="number" type="number" min=18 max=80 placeholder="Enter your age">
+                </label>
+                <div id="dd-container">
+                <p>How would you define yourself</p>
+                <select id="dropdown" required>
+                    <option disabled selected >Please select</option>
+                    <option value="ambitius">Ambitius</option>
+                    <option value="friendly">Friendly</option>
+                    <option value="mindfull">Mindfull</option>
+                    <option value="judgemental">Judgemental</option>
+                    <option value="complicated">Complicated</option>
+                </select>
+                </div>
+                <div id="checkDiv">
+                <p>Why do you want to take this test (You can select more than one)</p>
+                <label for="curiosity">
+                    <input id="curiosity" type="checkbox" name="why" value="curiosity">Curiosity
+                </label>
+                <label for="improving myself">
+                    <input id="improvingMyself" type="checkbox" name="why" value="improvingMyself">Improving myself
+                </label>
+                <label for="understand me better">
+                    <input id="understandMeBetter" type="checkbox" name="why" value="understandMeBetter">Understand me better
+                </label>
+                </div>
+                <div id="textareaDiv">
+                <p>If you have any ideas on how we could improve our service please tell us more</p>
+                <textarea id="comments" name="comments" placeholder="Enter your comments here" rows="5" cols="40" maxlength="80"></textarea>
+                </div>
+                <div id="radioDiv">
+                <p>Would you recommend our service to a friend?</p>
+                <label for="Yes, absolutely">
+                    <input type="radio" name="recommending rate" value="yes">Yes, absolutely
+                </label>
+                <label for="No, it was horrible">
+                    <input type="radio" name="recommending rate" value="no">No, it was horrible
+                </label>
+                <label for="Depends on the situation">
+                    <input type="radio" name="recommending rate" value="maybe">Depends on the situation
+                </label>
+                </div>
+                <button id="submit" type="submit">Submit</button>
+            </form>
+            </div>    
+    </body>
+</html>
